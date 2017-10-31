@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+    <script src="capture.js"></script>
+</head>
+<body>
+<form action="">
+    <p>Type <span class="mandatory">*</span></p>
+    <select>
+        <option value="1">Value 1</option>
+        <option value="2">Value 2</option>
+        <option value="3">Value 3</option>
+    </select>
+    <p>Quantiy <span class="mandatory">*</span></p>
+    <input type="number">
+    <p>Comment</p>
+    <textarea></textarea>
+    <div class="contentarea">
+
+        <div class="camera">
+            <video id="video">Video stream not available.</video>
+            <button id="startbutton">Take photo</button>
+        </div>
+        <canvas id="canvas">
+        </canvas>
+        <div class="output">
+            <img id="photo" alt="The screen capture will appear in this box.">
+        </div>
+
+    </div>
+    <button class="btn-submit">Create</button>
+</form>
+
+</body>
+</html>
